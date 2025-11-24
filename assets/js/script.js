@@ -1,9 +1,31 @@
 const navToggle = document.querySelector('.nav__toggle');
 const navLinks = document.querySelector('.nav__links');
 const form = document.getElementById('contact-form');
+const scrollLinks = document.querySelectorAll('a[href^="#"]');
 
 navToggle?.addEventListener('click', () => {
   navLinks?.classList.toggle('open');
+});
+
+scrollLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const targetId = link.getAttribute('href')?.substring(1);
+    if (!targetId) return;
+
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      event.preventDefault();
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      navLinks?.classList.remove('open');
+
+      if (targetId === 'contact-form') {
+        const nameInput = document.getElementById('name');
+        if (nameInput) {
+          nameInput.focus({ preventScroll: true });
+        }
+      }
+    }
+  });
 });
 
 form?.addEventListener('submit', (event) => {
