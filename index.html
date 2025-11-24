@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Кафе Aroma</title>
+  <title>Кафе Aroma — модульное кафе с авторским кофе</title>
+  <meta name="description" content="Aroma — модульное кафе в Кыргызстане: свежий кофе, десерты, быстрый сервис. Скорое открытие рядом с кампусом и офисами." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,62 +23,70 @@
         <li><a href="#home">Главная</a></li>
         <li><a href="#menu">Меню</a></li>
         <li><a href="#about">О нас</a></li>
+        <li><a href="#module">Модульное кафе</a></li>
+        <li><a href="#audience">ЦА</a></li>
         <li><a href="#reviews">Отзывы</a></li>
         <li><a href="#contact">Контакты</a></li>
       </ul>
     </nav>
 
     <div class="hero__content">
-      <p class="badge">Авторская кухня &amp; кофе</p>
-      <h1>Добро пожаловать в кафе Aroma</h1>
-      <p class="lead">Уютная атмосфера, свежая обжарка и сезонное меню от нашего шефа. Приходите за вкусом и вдохновением!</p>
+      <p class="badge">Кыргызстан • авторский кофе</p>
+      <h1>Добро пожаловать в модульное кафе Aroma</h1>
+      <p class="lead">Открываемся в 2026 году в Бишкеке рядом с кампусом и офисами. Быстрый кофе, десерты и тёплый сервис в компактном модульном формате.</p>
       <div class="hero__cta">
-        <a class="button" href="#menu">Смотреть меню</a>
-        <a class="button button--ghost" href="#contact">Забронировать стол</a>
+        <a class="button button--solid" href="#menu">Смотреть меню</a>
+        <a class="button button--ghost button--bold" href="#contact">Забронировать стол</a>
       </div>
       <div class="stats">
         <div>
-          <strong>8 лет</strong>
-          <span>в центре города</span>
+          <strong>2026</strong>
+          <span>скорое открытие</span>
         </div>
         <div>
-          <strong>320+</strong>
-          <span>отзывов гостей</span>
+          <strong>Модуль</strong>
+          <span>легко перенесём при росте</span>
         </div>
         <div>
-          <strong>24/7</strong>
-          <span>для ваших событий</span>
+          <strong>8:00–22:00</strong>
+          <span>Пн–Вс, готовим быстро</span>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-      <section class="section" id="menu">
-        <div class="section__header">
-          <p class="badge">Меню</p>
-          <h2>Хиты сезона</h2>
-          <p>Мы готовим из локальных ингредиентов и обновляем карту каждую неделю.</p>
+    <section class="section" id="menu">
+      <div class="section__header">
+        <p class="badge">Меню</p>
+        <h2>Меню для быстрого потока гостей</h2>
+        <p>Цены указаны в сомах — комфортно для студентов, офисов и жителей района.</p>
+      </div>
+
+      <div class="menu-section">
+        <div class="menu-section__head">
+          <h3>Кофе</h3>
+          <p>Своя обжарка и молоко 3.2%, растительное — +25 сом.</p>
         </div>
         <div class="grid grid--menu">
           <article class="card">
             <div class="card__image coffee"></div>
             <div class="card__body">
-              <h3>Флэт уайт «Арома»</h3>
-              <p>Двойной шот фирменной обжарки, бархатное молоко и нотки тростникового сахара.</p>
+              <h3>Эспрессо / Американо</h3>
+              <p>Классическая основа меню: сбалансированная кислотность и сладость.</p>
               <div class="card__meta">
-                <span class="price">320 ₽</span>
-                <span class="pill">-15% до 12:00</span>
+                <span class="price">120 / 150 сом</span>
+                <span class="pill">-10% утром</span>
               </div>
             </div>
           </article>
           <article class="card">
             <div class="card__image latte"></div>
             <div class="card__body">
-              <h3>Латте с пряной тыквой</h3>
-              <p>Натуральное тыквенное пюре, эспрессо на бленде Ethiopia и взбитое молоко с корицей.</p>
+              <h3>Капучино / Латте</h3>
+              <p>Кремовая текстура, молоко из Кыргызстана, аккуратная латте-арт подача.</p>
               <div class="card__meta">
-                <span class="price">340 ₽</span>
+                <span class="price">170 / 190 сом</span>
                 <span class="pill pill--accent">2+1 до 12:00</span>
               </div>
             </div>
@@ -86,86 +95,153 @@
             <div class="card__image filter"></div>
             <div class="card__body">
               <h3>Фильтр дня</h3>
-              <p>Смена зерна каждую неделю и аккуратный пуровер. Отлично сочетается с десертами.</p>
+              <p>Смена сорта каждую неделю, варим аккуратно и подаём быстро.</p>
               <div class="card__meta">
-                <span class="price">290 ₽</span>
+                <span class="price">160 сом</span>
                 <span class="pill">-20% с десертом</span>
               </div>
             </div>
           </article>
           <article class="card">
-            <div class="card__image dessert"></div>
+            <div class="card__image spicy"></div>
             <div class="card__body">
-              <h3>Чизкейк с карамелью</h3>
-              <p>Нежный сыр, корочка из миндального печенья и солёная карамель собственного приготовления.</p>
-              <span class="price">390 ₽</span>
+              <h3>Пряный «Aroma latte»</h3>
+              <p>Фирменный сироп с кардамоном и мёдом, двойной шот и взбитое молоко.</p>
+              <div class="card__meta">
+                <span class="price">210 сом</span>
+                <span class="pill">новинка</span>
+              </div>
             </div>
           </article>
-          <article class="card">
-            <div class="card__image salad"></div>
-            <div class="card__body">
-              <h3>Салат с копчёной уткой</h3>
-              <p>Утка, печёная груша, руккола и медово-горчичная заправка с прованскими травами.</p>
-              <span class="price">540 ₽</span>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card__image pasta"></div>
-            <div class="card__body">
-              <h3>Паста с белыми грибами</h3>
-              <p>Домашняя тальятелле, сливочный соус, белые грибы и щепотка трюфеля.</p>
-              <span class="price">610 ₽</span>
-            </div>
-          </article>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="menu-section__head">
+          <h3>Быстрые завтраки и комбо</h3>
+          <p>Собраны под поток гостей и доставку в соседние офисы.</p>
+        </div>
+        <div class="grid grid--menu">
           <article class="card">
             <div class="card__image brunch"></div>
             <div class="card__body">
-              <h3>Бриошь с авокадо</h3>
-              <p>Поджаренная бриошь, крем из авокадо, яйцо пашот и кунжутный соус юдзу.</p>
-              <span class="price">470 ₽</span>
+              <h3>Тост с яйцом</h3>
+              <p>Хрустящий хлеб, яйцо пашот, сливочный сыр и зелень.</p>
+              <div class="card__meta">
+                <span class="price">210 сом</span>
+                <span class="pill">комбо + кофе 350</span>
+              </div>
             </div>
           </article>
           <article class="card">
             <div class="card__image bowl"></div>
             <div class="card__body">
-              <h3>Боул с лососем</h3>
-              <p>Киноа, маринованный лосось, эдамаме, свежий огурец и соус понзу.</p>
-              <span class="price">620 ₽</span>
+              <h3>Боул с курицей</h3>
+              <p>Рис, маринованная курица, свежие овощи, соус понзу.</p>
+              <div class="card__meta">
+                <span class="price">260 сом</span>
+                <span class="pill">сытно</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image salad"></div>
+            <div class="card__body">
+              <h3>Салат с творожным сыром</h3>
+              <p>Микс салатов, запечённые овощи, семена и лёгкий медово-горчичный соус.</p>
+              <div class="card__meta">
+                <span class="price">230 сом</span>
+                <span class="pill">лайт</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image combo"></div>
+            <div class="card__body">
+              <h3>Комбо-завтрак</h3>
+              <p>Капучино + круассан с миндалём. Быстро и сладко к парам или в офис.</p>
+              <div class="card__meta">
+                <span class="price">250 сом</span>
+                <span class="pill pill--accent">до 11:30</span>
+              </div>
             </div>
           </article>
         </div>
-        <div class="promo">
-          <div>
-            <p class="badge badge--promo">Скидки на кофе</p>
-            <h3>Утренние предложения</h3>
-            <p>Загляните на завтрак: действуют спеццены на кофе и наборы «кофе + десерт».</p>
-          </div>
-          <ul class="promo__list">
-            <li><span>Капучино или латте</span><span class="pill">2 по цене 1 до 12:00</span></li>
-            <li><span>Фильтр дня</span><span class="pill">-20% с любым десертом</span></li>
-            <li><span>Раф с ванилью</span><span class="pill pill--accent">-15% при заказе онлайн</span></li>
-          </ul>
+      </div>
+
+      <div class="menu-section">
+        <div class="menu-section__head">
+          <h3>Десерты и выпечка</h3>
+          <p>Готовим на собственной кухне, доставка по району.</p>
         </div>
-      </section>
+        <div class="grid grid--menu">
+          <article class="card">
+            <div class="card__image dessert"></div>
+            <div class="card__body">
+              <h3>Чизкейк ванильный</h3>
+              <p>Мягкий сыр, хрустящее основание и соус солёной карамели.</p>
+              <span class="price">190 сом</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image croissant"></div>
+            <div class="card__body">
+              <h3>Круассан миндальный</h3>
+              <p>Воздушное тесто, миндальная паста и сахарная пудра.</p>
+              <span class="price">140 сом</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image tart"></div>
+            <div class="card__body">
+              <h3>Тарт с ягодами</h3>
+              <p>Песочное тесто, нежный крем и сезонные ягоды Кыргызстана.</p>
+              <span class="price">170 сом</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image cookie"></div>
+            <div class="card__body">
+              <h3>Печенье с шоколадом</h3>
+              <p>Большие кусочки шоколада и щепотка морской соли.</p>
+              <span class="price">90 сом</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="promo">
+        <div>
+          <p class="badge badge--promo">Скидки и средний чек</p>
+          <h3>Средний чек: 180–250 сом</h3>
+          <p>Чтобы легко заходить каждый день и собирать трафик из кампуса и бизнес-центров.</p>
+        </div>
+        <ul class="promo__list">
+          <li><span>Комбо-завтрак</span><span class="pill">кофе + круассан 250 сом</span></li>
+          <li><span>Студенческая скидка</span><span class="pill">-10% по будням до 12:00</span></li>
+          <li><span>Онлайн-предзаказ</span><span class="pill pill--accent">-15% на фирменный «Aroma latte»</span></li>
+        </ul>
+      </div>
+    </section>
 
     <section class="section section--split" id="about">
       <div class="section__header">
         <p class="badge">О нас</p>
-        <h2>История вкуса</h2>
-        <p>Мы открылись как маленькая кофейня, а сегодня — уютное кафе, где встречаются искусство, гастрономия и дружеская атмосфера.</p>
+        <h2>Мы строим модульное кафе в Бишкеке</h2>
+        <p>Формат под бизнес-план: компактный модуль рядом с университетом и офисами, чтобы быстро проверить трафик и расти.</p>
       </div>
       <div class="about__content">
         <div class="about__text">
-          <p>Наша команда — бариста чемпионского уровня, шеф-повар с опытом в ресторанах Европы и гостеприимные хостес. Мы тщательно выбираем зерно, работаем с местными фермерами и готовим блюда, которые хочется повторить.</p>
-          <p>Каждый месяц проводим дегустации, музыкальные вечера и мастер-классы. Приходите на завтрак, бизнес-ланч или тёплый ужин с друзьями — мы позаботимся о деталях.</p>
+          <p>Команда: молодые бариста, прошедшие обучение по стандартам сервиса, и шеф-повар с опытом в кафе Бишкека. Делая ставку на скорость и стабильный вкус, мы закупаем зерно у локальных обжарщиков и учим команду коммуникации с гостями.</p>
+          <p>Готовим меню, которое легко повторять и масштабировать: быстрые завтраки, кофе для предзаказа и десерты собственной кухни.</p>
           <div class="list">
             <div>
               <h4>Кофейная карта</h4>
-              <p>Спешелти сорта, альтернативные способы заваривания и сезонные авторские напитки.</p>
+              <p>Базовые напитки + авторский «Aroma latte», спеццены для студентов утром.</p>
             </div>
             <div>
               <h4>Кухня</h4>
-              <p>Меню с акцентом на свежие овощи, фермерское мясо и десерты ручной работы.</p>
+              <p>Простые сборки, закупка в районе, десерты и круассаны для ежедневного трафика.</p>
             </div>
           </div>
         </div>
@@ -173,11 +249,56 @@
       </div>
     </section>
 
+    <section class="section section--tile" id="module">
+      <div class="section__header center">
+        <p class="badge">Почему модульное кафе</p>
+        <h2>Готовность к запуску и переезду</h2>
+        <p>Модульный формат экономит бюджет на стройку, быстрее собирается и позволяет тестировать новые локации.</p>
+      </div>
+      <div class="grid grid--tile">
+        <article class="tile">
+          <h3>Быстрый монтаж</h3>
+          <p>Сборка и ввод в эксплуатацию за пару месяцев — без долгих ремонтов.</p>
+        </article>
+        <article class="tile">
+          <h3>Меньше затрат</h3>
+          <p>Чёткий бюджет на блоки, инженерка заложена заранее.</p>
+        </article>
+        <article class="tile">
+          <h3>Гибкость</h3>
+          <p>Можно перенести модуль ближе к трафику или увеличить площадь, добавив секцию.</p>
+        </article>
+        <article class="tile tile--image" aria-hidden="true"></article>
+      </div>
+    </section>
+
+    <section class="section" id="audience">
+      <div class="section__header">
+        <p class="badge">Целевая аудитория</p>
+        <h2>Для кого открываем Aroma</h2>
+        <p>Расчёт трафика строим на трёх потоках гостей вокруг локации.</p>
+      </div>
+      <div class="grid grid--audience">
+        <article class="card card--minimal">
+          <h3>Студенты рядом</h3>
+          <p>Утренняя скидка и быстрый кофе навынос перед парами.</p>
+        </article>
+        <article class="card card--minimal">
+          <h3>Сотрудники офисов</h3>
+          <p>Комбо-ланчи, предзаказ и доставка в соседние бизнес-центры.</p>
+        </article>
+        <article class="card card--minimal">
+          <h3>Жители района</h3>
+          <p>Сладкая витрина, семейные заказы вечером, стабильный график 8:00–22:00.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="section section--accent" id="reviews">
       <div class="section__header center">
         <p class="badge">Отзывы</p>
         <h2>Что говорят гости</h2>
-        <p>Мы ценим каждое впечатление и создаём сервис, к которому хочется возвращаться.</p>
+        <p>Собираем первые отзывы с тестовых запусков и дегустаций.</p>
       </div>
       <div class="grid grid--reviews">
         <article class="quote">
@@ -208,22 +329,29 @@
       <div class="section__header">
         <p class="badge">Контакты</p>
         <h2>Напишите нам</h2>
-        <p>Оставьте заявку на бронирование или задайте вопрос — мы ответим в течение 10 минут.</p>
+        <p>Оставьте заявку на бронирование или задайте вопрос — ответим за 10 минут в рабочие часы.</p>
       </div>
       <div class="contact__grid">
         <div class="contact__info">
           <div class="contact__card">
             <h4>Адрес</h4>
-            <p>ул. Гороховая, 12<br>Санкт-Петербург</p>
+            <p>г. Бишкек, район университета<br>ул. Ауэзова, 18/1</p>
+            <p class="muted">5 минут пешком от кампуса, рядом остановка «Ауэзова»</p>
           </div>
           <div class="contact__card">
             <h4>Время работы</h4>
-            <p>Пн–Чт: 8:00–22:00<br>Пт–Вс: 9:00–00:00</p>
+            <p>Пн–Вс: 8:00–22:00</p>
+            <p class="muted">Готовы к предзаказу и выдаче навынос</p>
           </div>
           <div class="contact__card">
             <h4>Телефон</h4>
-            <p><a href="tel:+78120000000">+7 (812) 000-00-00</a></p>
-            <p><a href="mailto:hello@aroma.cafe">hello@aroma.cafe</a></p>
+            <p><a href="tel:+996500123456">+996 500 123 456</a></p>
+            <p><a href="mailto:aroma.cafe.kz@gmail.com">aroma.cafe.kz@gmail.com</a></p>
+          </div>
+          <div class="contact__card contact__map">
+            <h4>Как добраться</h4>
+            <p class="muted">Мы в 5 минутах от кампуса. Ближайшая остановка «Ауэзова», парковка вдоль улицы.</p>
+            <div class="map" aria-hidden="true"></div>
           </div>
         </div>
         <form class="form" id="contact-form">
@@ -233,13 +361,13 @@
           </div>
           <div class="form__row">
             <label for="phone">Телефон</label>
-            <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+            <input id="phone" name="phone" type="tel" placeholder="+996 ___ ___ ___" required>
           </div>
           <div class="form__row">
             <label for="message">Сообщение</label>
             <textarea id="message" name="message" rows="4" placeholder="Когда хотите прийти или задать вопрос" required></textarea>
           </div>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button button--solid" type="submit">Отправить</button>
           <p class="form__note">Нажимая кнопку, вы соглашаетесь с условиями обработки данных.</p>
         </form>
       </div>

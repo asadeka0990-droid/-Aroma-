@@ -188,6 +188,10 @@ h1 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.button--solid {
+  font-size: 15px;
+}
+
 .button:hover {
   transform: translateY(-1px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
@@ -198,6 +202,12 @@ h1 {
   color: var(--text);
   border: 1px solid rgba(233, 201, 160, 0.35);
   box-shadow: none;
+}
+
+.button--bold {
+  font-weight: 800;
+  padding: 12px 22px;
+  border-width: 2px;
 }
 
 .stats {
@@ -232,6 +242,32 @@ h1 {
 
 .section__header p {
   margin: 0 0 6px;
+  color: var(--muted);
+}
+
+.menu-section {
+  margin-bottom: 32px;
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(233, 201, 160, 0.08);
+  background: rgba(27, 20, 15, 0.7);
+}
+
+.menu-section__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.menu-section__head h3 {
+  margin: 0;
+}
+
+.menu-section__head p {
+  margin: 0;
   color: var(--muted);
 }
 
@@ -321,6 +357,11 @@ h1 {
     url('https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=1200&q=80');
 }
 
+.spicy {
+  background-image: linear-gradient(120deg, rgba(194, 135, 91, 0.45), rgba(27, 20, 15, 0.88)),
+    url('https://images.unsplash.com/photo-1517705506776-193130c9a6b0?auto=format&fit=crop&w=1200&q=80');
+}
+
 .filter {
   background-image: linear-gradient(120deg, rgba(194, 135, 91, 0.45), rgba(27, 20, 15, 0.85)),
     url('https://images.unsplash.com/photo-1510626176961-4b37d0f0b477?auto=format&fit=crop&w=1200&q=80');
@@ -349,6 +390,26 @@ h1 {
 .bowl {
   background-image: linear-gradient(120deg, rgba(194, 135, 91, 0.32), rgba(27, 20, 15, 0.88)),
     url('https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=80');
+}
+
+.combo {
+  background-image: linear-gradient(120deg, rgba(233, 201, 160, 0.35), rgba(27, 20, 15, 0.88)),
+    url('https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=1200&q=80');
+}
+
+.croissant {
+  background-image: linear-gradient(120deg, rgba(233, 201, 160, 0.38), rgba(27, 20, 15, 0.88)),
+    url('https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=1200&q=80');
+}
+
+.tart {
+  background-image: linear-gradient(120deg, rgba(194, 135, 91, 0.32), rgba(27, 20, 15, 0.9)),
+    url('https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80');
+}
+
+.cookie {
+  background-image: linear-gradient(120deg, rgba(233, 201, 160, 0.3), rgba(27, 20, 15, 0.9)),
+    url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80');
 }
 
 .section--split {
@@ -392,6 +453,29 @@ h1 {
   border-radius: 12px;
   border: 1px solid rgba(233, 201, 160, 0.12);
   background: rgba(15, 11, 7, 0.6);
+}
+
+.section--tile {
+  background: radial-gradient(circle at 20% 10%, rgba(233, 201, 160, 0.08), rgba(15, 11, 7, 0.95)),
+    radial-gradient(circle at 80% 80%, rgba(194, 135, 91, 0.08), rgba(15, 11, 7, 0.9));
+}
+
+.grid--tile {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.tile {
+  padding: 18px;
+  border-radius: var(--radius);
+  background: rgba(27, 20, 15, 0.88);
+  border: 1px solid rgba(233, 201, 160, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.tile--image {
+  min-height: 240px;
+  background: linear-gradient(145deg, rgba(233, 201, 160, 0.18), rgba(194, 135, 91, 0.22)),
+    url('https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80') center/cover;
 }
 
 .about__content {
@@ -482,6 +566,24 @@ h1 {
   color: var(--muted);
 }
 
+.muted {
+  color: var(--muted);
+}
+
+.contact__map {
+  grid-column: 1/-1;
+}
+
+.map {
+  margin-top: 12px;
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, rgba(233, 201, 160, 0.3), rgba(27, 20, 15, 0.8)),
+    url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1200&q=80') center/cover;
+  border: 1px solid rgba(233, 201, 160, 0.18);
+}
+
 .form {
   padding: 18px;
   border-radius: var(--radius);
@@ -527,6 +629,16 @@ textarea {
   margin: 0;
   color: var(--muted);
   font-size: 13px;
+}
+
+.grid--audience {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card--minimal {
+  padding: 18px;
+  border: 1px solid rgba(233, 201, 160, 0.12);
+  background: rgba(27, 20, 15, 0.85);
 }
 
 .footer {
