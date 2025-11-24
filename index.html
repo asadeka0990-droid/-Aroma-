@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кафе Aroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav">
+      <div class="logo">Aroma</div>
+      <button class="nav__toggle" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero__content">
+      <p class="badge">Авторская кухня &amp; кофе</p>
+      <h1>Добро пожаловать в кафе Aroma</h1>
+      <p class="lead">Уютная атмосфера, свежая обжарка и сезонное меню от нашего шефа. Приходите за вкусом и вдохновением!</p>
+      <div class="hero__cta">
+        <a class="button" href="#menu">Смотреть меню</a>
+        <a class="button button--ghost" href="#contact">Забронировать стол</a>
+      </div>
+      <div class="stats">
+        <div>
+          <strong>8 лет</strong>
+          <span>в центре города</span>
+        </div>
+        <div>
+          <strong>320+</strong>
+          <span>отзывов гостей</span>
+        </div>
+        <div>
+          <strong>24/7</strong>
+          <span>для ваших событий</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+      <section class="section" id="menu">
+        <div class="section__header">
+          <p class="badge">Меню</p>
+          <h2>Хиты сезона</h2>
+          <p>Мы готовим из локальных ингредиентов и обновляем карту каждую неделю.</p>
+        </div>
+        <div class="grid grid--menu">
+          <article class="card">
+            <div class="card__image coffee"></div>
+            <div class="card__body">
+              <h3>Флэт уайт «Арома»</h3>
+              <p>Двойной шот фирменной обжарки, бархатное молоко и нотки тростникового сахара.</p>
+              <div class="card__meta">
+                <span class="price">320 ₽</span>
+                <span class="pill">-15% до 12:00</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image latte"></div>
+            <div class="card__body">
+              <h3>Латте с пряной тыквой</h3>
+              <p>Натуральное тыквенное пюре, эспрессо на бленде Ethiopia и взбитое молоко с корицей.</p>
+              <div class="card__meta">
+                <span class="price">340 ₽</span>
+                <span class="pill pill--accent">2+1 до 12:00</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image filter"></div>
+            <div class="card__body">
+              <h3>Фильтр дня</h3>
+              <p>Смена зерна каждую неделю и аккуратный пуровер. Отлично сочетается с десертами.</p>
+              <div class="card__meta">
+                <span class="price">290 ₽</span>
+                <span class="pill">-20% с десертом</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image dessert"></div>
+            <div class="card__body">
+              <h3>Чизкейк с карамелью</h3>
+              <p>Нежный сыр, корочка из миндального печенья и солёная карамель собственного приготовления.</p>
+              <span class="price">390 ₽</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image salad"></div>
+            <div class="card__body">
+              <h3>Салат с копчёной уткой</h3>
+              <p>Утка, печёная груша, руккола и медово-горчичная заправка с прованскими травами.</p>
+              <span class="price">540 ₽</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image pasta"></div>
+            <div class="card__body">
+              <h3>Паста с белыми грибами</h3>
+              <p>Домашняя тальятелле, сливочный соус, белые грибы и щепотка трюфеля.</p>
+              <span class="price">610 ₽</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image brunch"></div>
+            <div class="card__body">
+              <h3>Бриошь с авокадо</h3>
+              <p>Поджаренная бриошь, крем из авокадо, яйцо пашот и кунжутный соус юдзу.</p>
+              <span class="price">470 ₽</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image bowl"></div>
+            <div class="card__body">
+              <h3>Боул с лососем</h3>
+              <p>Киноа, маринованный лосось, эдамаме, свежий огурец и соус понзу.</p>
+              <span class="price">620 ₽</span>
+            </div>
+          </article>
+        </div>
+        <div class="promo">
+          <div>
+            <p class="badge badge--promo">Скидки на кофе</p>
+            <h3>Утренние предложения</h3>
+            <p>Загляните на завтрак: действуют спеццены на кофе и наборы «кофе + десерт».</p>
+          </div>
+          <ul class="promo__list">
+            <li><span>Капучино или латте</span><span class="pill">2 по цене 1 до 12:00</span></li>
+            <li><span>Фильтр дня</span><span class="pill">-20% с любым десертом</span></li>
+            <li><span>Раф с ванилью</span><span class="pill pill--accent">-15% при заказе онлайн</span></li>
+          </ul>
+        </div>
+      </section>
+
+    <section class="section section--split" id="about">
+      <div class="section__header">
+        <p class="badge">О нас</p>
+        <h2>История вкуса</h2>
+        <p>Мы открылись как маленькая кофейня, а сегодня — уютное кафе, где встречаются искусство, гастрономия и дружеская атмосфера.</p>
+      </div>
+      <div class="about__content">
+        <div class="about__text">
+          <p>Наша команда — бариста чемпионского уровня, шеф-повар с опытом в ресторанах Европы и гостеприимные хостес. Мы тщательно выбираем зерно, работаем с местными фермерами и готовим блюда, которые хочется повторить.</p>
+          <p>Каждый месяц проводим дегустации, музыкальные вечера и мастер-классы. Приходите на завтрак, бизнес-ланч или тёплый ужин с друзьями — мы позаботимся о деталях.</p>
+          <div class="list">
+            <div>
+              <h4>Кофейная карта</h4>
+              <p>Спешелти сорта, альтернативные способы заваривания и сезонные авторские напитки.</p>
+            </div>
+            <div>
+              <h4>Кухня</h4>
+              <p>Меню с акцентом на свежие овощи, фермерское мясо и десерты ручной работы.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about__image" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section section--accent" id="reviews">
+      <div class="section__header center">
+        <p class="badge">Отзывы</p>
+        <h2>Что говорят гости</h2>
+        <p>Мы ценим каждое впечатление и создаём сервис, к которому хочется возвращаться.</p>
+      </div>
+      <div class="grid grid--reviews">
+        <article class="quote">
+          <p>«Лучший флэт уайт в городе! Бариста всегда рассказывают о зерне, а десерты — произведение искусства.»</p>
+          <div class="quote__meta">
+            <span class="quote__name">Анна Петрова</span>
+            <span class="quote__role">Маркетолог</span>
+          </div>
+        </article>
+        <article class="quote">
+          <p>«Уютный интерьер, приятная музыка и дружелюбный персонал. Часто беру здесь бизнес-ланч — быстро и вкусно.»</p>
+          <div class="quote__meta">
+            <span class="quote__name">Игорь Смирнов</span>
+            <span class="quote__role">Предприниматель</span>
+          </div>
+        </article>
+        <article class="quote">
+          <p>«На мастер-классах познакомилась с альтернативными способами заваривания. Теперь привожу друзей — всем нравится.»</p>
+          <div class="quote__meta">
+            <span class="quote__name">Мария Волкова</span>
+            <span class="quote__role">Дизайнер</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="section__header">
+        <p class="badge">Контакты</p>
+        <h2>Напишите нам</h2>
+        <p>Оставьте заявку на бронирование или задайте вопрос — мы ответим в течение 10 минут.</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__card">
+            <h4>Адрес</h4>
+            <p>ул. Гороховая, 12<br>Санкт-Петербург</p>
+          </div>
+          <div class="contact__card">
+            <h4>Время работы</h4>
+            <p>Пн–Чт: 8:00–22:00<br>Пт–Вс: 9:00–00:00</p>
+          </div>
+          <div class="contact__card">
+            <h4>Телефон</h4>
+            <p><a href="tel:+78120000000">+7 (812) 000-00-00</a></p>
+            <p><a href="mailto:hello@aroma.cafe">hello@aroma.cafe</a></p>
+          </div>
+        </div>
+        <form class="form" id="contact-form">
+          <div class="form__row">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" placeholder="Ваше имя" required>
+          </div>
+          <div class="form__row">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form__row">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" placeholder="Когда хотите прийти или задать вопрос" required></textarea>
+          </div>
+          <button class="button" type="submit">Отправить</button>
+          <p class="form__note">Нажимая кнопку, вы соглашаетесь с условиями обработки данных.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">Aroma</div>
+    <div class="footer__links">
+      <a href="#menu">Меню</a>
+      <a href="#about">О нас</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </div>
+    <p class="footer__copy">© 2024 Aroma. Сделано с любовью к кофе.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
